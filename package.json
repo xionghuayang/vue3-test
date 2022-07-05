@@ -1,0 +1,47 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts}": [
+      "npm run lint",
+      "git add ."
+    ]
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.6",
+    "element-plus": "^2.2.8",
+    "normalize.css": "^8.0.1",
+    "pinia": "^2.0.14",
+    "vue": "^3.2.25",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "commitlint": "^17.0.3",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "unplugin-vue-define-options": "^0.6.1",
+    "vite": "^2.9.9",
+    "vite-plugin-eslint": "^1.6.1"
+  }
+}
